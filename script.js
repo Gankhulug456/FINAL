@@ -26,9 +26,9 @@ let scrollTween = gsap.to(sections, {
   scrollTrigger: {
     trigger: ".container",
     pin: true,
-    scrub: 1,
+    scrub: 1.8,
     start: "top top",
-    end: `+=${sections.length * window.innerWidth*1.5}`,
+    end: `+=${sections.length * window.innerWidth}`,
     snap: 0.1 / (sections.length + 10),
     markers: {startColor: "white", endColor: "white", fontSize: "0px", fontWeight: "bold", indent: 20},
     invalidateOnRefresh: true, 
@@ -63,9 +63,9 @@ let scrollTween2 = gsap.to(sections2, {
     scrollTrigger: {
         trigger: ".wrapper2 .container2",
         pin: true,
-        scrub: 1,
+        scrub: 1.8,
         start: "top top",
-        end: `+=${sections2.length * window.innerWidth*1.5}`,
+        end: `+=${sections2.length * window.innerWidth}`,
         snap: 0.1 / (sections2.length + 10),
         markers: { startColor: "green", endColor: "green", fontSize: "0px" },
         invalidateOnRefresh: true, 
